@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contáctanos - FITLIFE</title>
+
+    <!-- Tus mismos CSS globales -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="historia.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+    <link rel="stylesheet" href="pie.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="top-header">
+      <a href="inicio.html" class="logo">
+        <img height="190" width="300" src="img/LOGO.png" alt="logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="menu-horizontal">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li>
+          <a>Conocenos <span class="flecha">&#9662;</span></a>
+          <ul class="menu-vertical">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="proposito.html">Proposito</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Guía Fitness<span class="flecha">&#9662;</span></a>
+          <ul class="menu-vertical">
+            <li><a href="rutinas.html">Rutinas</a></li>
+            <li><a href="nutricion.html">Nutrición</a></li>
+            <li><a href="suplementos.html">Suplmemnetos</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+          </ul>
+        </li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+<!-- SECCIÓN NUESTRA HISTORIA -->
+<section class="seccion-historia">
+    <h1>Nuestra historia</h1>
+    <p class="historia-intro">
+      FITLIFE nació como un proyecto pensado para ayudar a las personas a
+      entender mejor el mundo del gimnasio, las rutinas y la alimentación,
+      con información clara y sencilla.
+    </p>
+  
+    <!-- BLOQUE 1: TEXTO IZQUIERDA / IMAGEN DERECHA -->
+    <div class="bloque-historia">
+      <div class="historia-texto">
+        <h2>Cómo empezó todo</h2>
+        <p>
+          Este proyecto surge a partir de la necesidad de contar con una guía
+          básica para quienes recién empiezan en el gimnasio y se sienten
+          perdidos entre tantos ejercicios, términos y recomendaciones.
+        </p>
+        <p>
+          A partir de esa idea, comenzamos a organizar la información en secciones
+          como rutinas, nutrición, suplementos y consejos, siempre con un lenguaje
+          cercano y fácil de entender.
+        </p>
+      </div>
+  
+      <div class="historia-imagen">
+        <img src="img/ingreso_gym.jpg" alt="Persona entrenando en el gimnasio" />
+      </div>
+    </div>
+  
+    <!-- BLOQUE 2: IMAGEN IZQUIERDA / TEXTO DERECHA -->
+    <div class="bloque-historia">
+      <div class="historia-imagen">
+        <img src="img/hablar_gym.avif" alt="Personas compartiendo una rutina de ejercicio" />
+      </div>
+  
+      <div class="historia-texto">
+        <h2>Cómo seguimos creciendo</h2>
+        <p>
+          Con el tiempo, FITLIFE fue incorporando más contenido para distintos
+          niveles de experiencia, desde principiantes hasta personas con mayor
+          recorrido en el gimnasio.
+        </p>
+        <p>
+          Nuestro objetivo es que encuentres un espacio donde puedas aclarar
+          dudas y aprender conceptos básicos antes de aplicar cualquier rutina
+          o cambio en tu estilo de vida.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+        <!-- PIE DE PAGINA -->
+        <section id="footer">
+          <footer class="footer">
+           <div class="footer-container">
+       <!-- Logo y nombre de sitio -->
+       <div class="footer-brand">
+         <img 
+           src="img/LOGO_PEQUEÑO.png"
+           alt="Logo"
+           class="footer-logo"
+         />
+         <p>FITLIFE</p>
+         <small>© 2025 Todos los derechos reservados</small>
+       </div>
+     
+       <!-- Enlaces legales -->
+       <div class="footer-links">
+         <h4>Legal</h4>
+         <a href="Documento/Política de Privacidad.pdf"
+           >Política de Privacidad</a
+         >
+         <!-- Dentro de href llama a un documento pdf con la poltica-->
+         <a href="Documento/Términos y Condiciones.pdf"
+           >Términos y Condiciones</a
+         >
+         <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+         <a href="Documento/LeyProteccionDatos.pdf">Protección de Datos</a>
+       </div>
+     
+       <!-- Redes sociales con íconos personalizados -->
+       <div class="footer-social">
+         <h4>Síguenos</h4>
+         <a href="https://www.facebook.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+             alt="Facebook"
+             class="social-icon"
+         /></a>
+         <a href="https://www.instagram.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+             alt="Instagram"
+             class="social-icon"
+         /></a>
+         <a href="https://www.youtube.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+             alt="Youtube"
+             class="social-icon"
+         /></a>
+         <a href="https://www.tiktok.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/3116/3116491.png"
+             alt="Tik tok"
+             class="social-icon"
+         /></a>
+       </div>
+     </div>
+     </footer>
+     <script src="menu_toggle.js"></script>
+  </body>
+</html>

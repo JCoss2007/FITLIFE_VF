@@ -1,0 +1,61 @@
+/* ====== SECCIÓN "NUESTRA HISTORIA" ====== */
+
+.seccion-historia {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 32px;
+}
+
+.seccion-historia h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.historia-intro {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+/* Bloques de texto + imagen en fila */
+.bloque-historia {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.historia-texto {
+  flex: 1;
+}
+
+.historia-texto h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.historia-texto p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.historia-imagen {
+  flex: 1;
+}
+
+.historia-imagen img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* En celular: uno debajo del otro (como suele hacer el profe con flex) */
+@media (max-width: 768px) {
+  .bloque-historia {
+    flex-direction: column;
+  }
+}

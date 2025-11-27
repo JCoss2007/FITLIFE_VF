@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.top-header {
+  margin: 0;
+  font-family: "Courgette", cursive;
+  position: static; /* Mantiene el menú fijo en la parte superior */
+  background-color: white; /* Fondo blanco para visibilidad */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 100; /* Se asegura de estar por encima de otros elementos */
+  height: 5rem; /* Altura fija del menú */
+  display: flex; /* Activa Flexbox para alinear los elementos internos */
+  align-items: center; /* Centrado vertical */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+  justify-content: space-between; /* Espaciado uniforme entre logo y menú */
+  padding: 0 0.5rem; /* Espacio horizontal interno del menú */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra para destacar el header */
+}
+
+/* LOGO */
+.LOGO img {
+  height: 3rem; /* Altura del logo */
+  width: auto; /* Mantiene proporción automática */
+}
+/* MENÚ PRINCIPAL HORIZONTAL */
+.menu-horizontal {
+  list-style: none; /* Quita los bullets */
+  display: flex; /* Muestra en fila horizontal */
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  margin: 0;
+  padding: 0 2rem; /* Agrega espacio interno para evitar cortes */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+.menu-horizontal li {
+  position: relative; /* Necesario para el submenú */
+  margin: 0 1rem; /* Espacio entre los elementos del menú */
+  font-family: "Courgette", cursive; /* Fuente personalizada */
+  font-weight: 400; /* Peso de la fuente */
+  font-style: normal; /* Estilo normal de la fuente */
+  font-size: 1.2rem; /* Tamaño de fuente del menú */
+  color: black; /* Color del texto del menú */
+}
+/* ENLACES DEL MENÚ */
+.menu-horizontal li a {
+  display: block; /* Permite aplicar padding y área clickeable completa */
+  padding: 1rem 1.25rem; /* Espaciado vertical y horizontal */
+  color: black; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  white-space: nowrap; /* Evita que el texto se corte */
+}
+
+.menu-horizontal li a:hover {
+  color: orange; /* Cambio de color al pasar el mouse */
+}
+
+/* SUBMENÚ VERTICAL */
+.menu-vertical {
+  display: none; /* Oculto por defecto */
+  position: absolute; /* Posición absoluta para evitar que empuje otros elementos */
+  top: 100%; /* Despliega el submenú justo debajo del elemento padre */
+  left: 0; /* Alinea el submenú con el borde izquierdo del elemento padre */
+  background-color: rgb(255, 255, 255); /* Fondo visible */
+  list-style: none;
+  padding: 0.5rem 0; /* Espaciado interno */
+  margin: 0; /* Sin margen externo */
+  width: auto; /* Ajusta el ancho automáticamente según el contenido */
+  min-width: 12rem; /* Establece un ancho mínimo para evitar cortes */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra para destacar */
+  z-index: 100; /* Asegura que esté encima de otros elementos */
+}
+
+.menu-vertical.active {
+  display: block; /* Mostrar el submenú al activarse */
+}
+
+/* ENLACES DEL SUBMENÚ */
+.menu-vertical li a {
+  display: block;
+  color: black;
+  padding: 0.5rem 1rem; /* Espaciado interno para los enlaces */
+  text-decoration: none;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.menu-vertical li a:hover {
+  background-color: #eee; /* Resalta al pasar el mouse */
+  color: black; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* MENÚ PRINCIPAL HORIZONTAL */
+.menu-horizontal li:hover .menu-vertical {
+  display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+@media (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+  .menu-toggle {
+    display: block; /* Muestra el botón hamburguesa en pantallas medianas */
+  }
+
+  .menu-horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5.5rem; /* Debajo del menú fijo */
+    left: 0;
+    z-index: 99;
+  }
+
+  .menu-horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .menu-horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    width: 100%;
+  }
+
+  .btn-cuenta {
+    position: static;
+    margin: 1rem auto; /* Centrado en pantallas medianas */
+  }
+
+  .contenedor-header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas pequeñas */
+  .menu-toggle {
+    display: block; /* Muestra el botón hamburguesa en móviles */
+  }
+
+  .menu-horizontal {
+    flex-direction: column; /* Mostrar el menú en vertical */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+    z-index: 99;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  }
+
+  .menu-horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .menu-horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    width: 100%;
+    text-align: left; /* Alinea los elementos a la izquierda */
+  }
+
+  .menu-horizontal li a {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    padding: 0.5rem 1rem; /* Ajusta el padding */
+  }
+
+  .btn-cuenta {
+    position: static;
+    margin: 1rem auto; /* Centrado en móviles */
+  }
+
+  .contenedor-header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .footer-container {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 20px; /* Ajusta el espacio entre columnas */
+  }
+
+  .footer-column {
+    width: 100%; /* Asegura que las columnas ocupen el ancho completo */
+    text-align: center; /* Centra el contenido */
+  }
+
+  .menu-vertical {
+    position: relative; /* Cambia la posición para pantallas pequeñas */
+    box-shadow: none; /* Elimina la sombra */
+    margin-left: 1rem; /* Ajusta el margen */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos para pantallas muy pequeñas */
+  .menu-horizontal li a {
+    font-size: 1rem; /* Reduce el tamaño de los enlaces */
+    padding: 0.5rem 1rem; /* Ajusta el padding */
+  }
+
+  .btn-cuenta {
+    font-size: 0.9rem; /* Ajusta el tamaño del botón */
+    padding: 0.5rem 1rem; /* Reduce el padding */
+  }
+
+  .footer-column h3 {
+    font-size: 1rem; /* Reduce el tamaño de los encabezados */
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.8rem; /* Reduce el tamaño de los enlaces */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+/* Para que el contenido no se pegue a los bordes */
+.home-main {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+}
+
+/* ====== HERO (sección principal) ====== */
+
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #111 0%, #000 60%);
+  padding: 5px 0; /* más espacio vertical elegante */
+  color: #fff;
+}
+
+.hero-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-texto {
+  max-width: 600px;
+}
+
+.hero-texto h1 {
+  font-size: 3.8rem;
+  font-family: "Courgette", cursive;
+  margin-bottom: 15px;
+}
+
+.hero-texto p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.hero-imagen img {
+  width: 625px;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); /* estética pro */
+}
+
+/* Botón principal */
+
+.btn-primario {
+  display: inline-block;
+  background-color: #ff7a1a;
+  padding: 12px 26px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.btn-primario:hover {
+  background-color: #e06710;
+  transform: scale(1.06);
+}
+
+/* ====== CATEGORÍAS ====== */
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 36px 0 40px 0;
+}
+
+.categoria-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 18px 16px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.categoria-card .icono {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.categoria-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.categoria-card p {
+  font-size: 0.92rem;
+  color: #555;
+}
+
+/* ====== ARTÍCULOS DESTACADOS ====== */
+
+.articulos {
+  margin: 10px 0 40px 0;
+}
+
+.articulos h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.articulos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.articulo-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.articulo-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.articulo-card h3 {
+  font-size: 1rem;
+  margin: 10px 12px 4px 12px;
+}
+
+.articulo-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 12px 12px 12px;
+}
+
+/* ====== CTA CONTACTO ====== */
+
+.cta-contacto {
+  background: linear-gradient(90deg, #ff7a1a, #ff9f3c);
+  border-radius: 22px;
+  padding: 22px 26px; /* bajamos paddings para que no se vea tan gigante */
+  color: #fff;
+  margin-top: 30px;
+}
+
+.cta-contenido h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.cta-contenido p {
+  font-size: 0.96rem;
+  line-height: 1.6;
+  max-width: 560px;
+  margin-bottom: 14px;
+}
+
+.btn-secundario {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-secundario:hover {
+  background-color: #fff;
+  color: #ff7a1a;
+}
+
+/* ========================= */
+/*   RESPONSIVE: TABLET      */
+/* ========================= */
+@media (max-width: 1024px) {
+  /* HERO más compacto */
+  .hero-inner {
+    max-width: 1000px;
+    padding: 0 24px;
+    gap: 32px;
+  }
+
+  .hero-texto h1 {
+    font-size: 3rem;
+  }
+
+  .hero-texto p {
+    font-size: 1.05rem;
+  }
+
+  .hero-imagen img {
+    width: 480px;
+  }
+
+  /* Contenido principal con menos márgenes */
+  .home-main {
+    max-width: 1000px;
+    margin: 32px auto 48px auto;
+    padding: 0 16px;
+  }
+
+  /* Categorías y artículos: de 4 a 2 columnas */
+  .categorias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .articulos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ========================= */
+/*   RESPONSIVE: MÓVIL GRANDE */
+/* ========================= */
+@media (max-width: 768px) {
+  /* HERO en columna: texto arriba, imagen abajo */
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 20px 24px;
+    gap: 24px;
+  }
+
+  .hero-texto {
+    max-width: 100%;
+  }
+
+  .hero-texto h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-texto p {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-imagen img {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 8px;
+  }
+
+  .home-main {
+    max-width: 100%;
+    margin: 24px auto 36px auto;
+    padding: 0 16px;
+  }
+
+  /* Categorías: 2 columnas */
+  .categorias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .categoria-card {
+    padding: 14px 12px;
+  }
+
+  /* Artículos: 2 columnas */
+  .articulos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .articulo-card img {
+    height: 140px;
+  }
+
+  /* CTA más compacta */
+  .cta-contacto {
+    padding: 18px 18px;
+    border-radius: 18px;
+  }
+
+  .cta-contenido h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ========================= */
+/*   RESPONSIVE: CELULAR CHICO */
+/* ========================= */
+@media (max-width: 480px) {
+  .hero-texto h1 {
+    font-size: 2rem;
+  }
+
+  .hero-texto p {
+    font-size: 0.95rem;
+  }
+
+  .home-main {
+    margin: 20px auto 30px auto;
+    padding: 0 12px;
+  }
+
+  /* Categorías: 1 columna */
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+
+  /* Artículos: 1 columna */
+  .articulos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-contacto {
+    padding: 16px 14px;
+  }
+
+  .cta-contenido p {
+    max-width: 100%;
+  }
+}

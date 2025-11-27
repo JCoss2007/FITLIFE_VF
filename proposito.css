@@ -1,0 +1,76 @@
+/* ====== SECCIÓN PROPÓSITO ====== */
+
+.seccion-proposito {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 32px;
+}
+
+.seccion-proposito h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.proposito-intro {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Bloque principal: texto + imagen */
+.proposito-bloque {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.proposito-texto {
+  flex: 1;
+}
+
+.proposito-texto h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.proposito-texto p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.proposito-lista {
+  list-style: disc;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.proposito-lista li {
+  margin-bottom: 4px;
+}
+
+.proposito-imagen {
+  flex: 1;
+}
+
+.proposito-imagen img {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Responsive: en tablet/celu se apila igual que historia */
+@media (max-width: 768px) {
+  .seccion-proposito {
+    padding: 0 20px;
+  }
+
+  .proposito-bloque {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PROYECTO IHC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="top-header">
+<a href="inicio.html" class="logo">
+  <img height="190" width="300" src="img/LOGO.png" alt="logo" />
+</a>
+<button class="menu-toggle" aria-label="Abrir menú">
+&#9776;
+</button>
+<ul class="menu-horizontal">
+  <li><a href="inicio.html">Inicio</a></li>
+  <li>
+    <a>Conocenos <span class="flecha">&#9662;</span></a>
+    <ul class="menu-vertical">
+      <li><a href="historia.html">Nuestra historia</a></li>
+      <li><a href="proposito.html">Proposito</a></li>
+    </ul>
+  </li>
+  <li>
+    <a>Guía Fitness<span class="flecha">&#9662;</span></a>
+    <ul class="menu-vertical">
+    <li><a href="rutinas.html">Rutinas</a></li>
+    <li><a href="nutricion.html">Nutrición</a></li>
+    <li><a href="suplementos.html">Suplmemnetos</a></li>
+    <li><a href="consejos.html">Consejos</a></li>
+    </ul>
+  </li>
+  <li><a href="contactanos.html">Contáctanos</a></li>
+</ul>
+</nav>
+<div id="menu-principal"></div>
+
+    <!-- HERO / INICIO -->
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-texto">
+          <h1>Mejora tu rendimiento físico</h1>
+          <p>
+            Explora tips, rutinas y consejos para alcanzar tus objetivos en el
+            gimnasio de forma segura y efectiva.
+          </p>
+          <a href="#articulos" class="btn-primario">Ver artículos</a>
+        </div>
+
+        <div class="hero-imagen">
+          <img
+            src="img/entreno_bicep.jpg"
+            alt="Persona entrenando con pesas"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main class="home-main">
+      <!-- CATEGORÍAS PRINCIPALES -->
+      <section class="categorias">
+        <article class="categoria-card">
+          <span class="icono">💪</span>
+          <h3>Rutinas</h3>
+          <p>Entrenamientos por nivel y objetivo.</p>
+        </article>
+
+        <article class="categoria-card">
+          <span class="icono">🥗</span>
+          <h3>Nutrición</h3>
+          <p>Consejos de alimentación para mejorar tu rendimiento.</p>
+        </article>
+
+        <article class="categoria-card">
+          <span class="icono">💬</span>
+          <h3>Consejos</h3>
+          <p>Recomendaciones para entrenar con buena técnica.</p>
+        </article>
+
+        <article class="categoria-card">
+          <span class="icono">🧩</span>
+          <h3>Suplementos</h3>
+          <p>Información clara, sin venderte nada.</p>
+        </article>
+      </section>
+
+      <!-- ARTÍCULOS DESTACADOS -->
+      <section class="articulos" id="articulos">
+        <h2>Artículos destacados</h2>
+
+        <div class="articulos-grid">
+          <article class="articulo-card">
+            <img src="img/rutina_ppl.jpg" alt="Rutina Push Pull Legs" />
+            <h3>Rutina Push Pull Legs</h3>
+            <p>Organiza tus entrenamientos de forma simple y efectiva.</p>
+          </article>
+
+          <article class="articulo-card">
+            <img src="img/guia_creatina.webp" alt="Guía de la creatina" />
+            <h3>Guía de la creatina</h3>
+            <p>Qué es, cómo tomarla y mitos más comunes.</p>
+          </article>
+
+          <article class="articulo-card">
+            <img src="img/dieta_volumen.jpg" alt="Dieta para volumen" />
+            <h3>Dieta para volumen</h3>
+            <p>Ideas de comidas para ganar masa muscular.</p>
+          </article>
+
+          <article class="articulo-card">
+            <img src="img/guia_gym.jpg" alt="Cómo empezar en el gym" />
+            <h3>Cómo empezar en el gym</h3>
+            <p>Guía básica para tus primeras semanas.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION A CONTACTO -->
+      <section class="cta-contacto">
+        <div class="cta-contenido">
+          <h2>¿Quieres una asesoría personalizada?</h2>
+          <p>
+            Escríbenos a través de la sección de contacto y cuéntanos tu
+            objetivo. Te ayudamos a encontrar la mejor rutina o plan según tu
+            nivel.
+          </p>
+          <a href="contactanos.html" class="btn-secundario">Ir a Contáctanos</a>
+        </div>
+      </section>
+    </main>
+    <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+       <div class="footer-container">
+   <!-- Logo y nombre de sitio -->
+   <div class="footer-brand">
+     <img 
+       src="img/LOGO_PEQUEÑO.png"
+       alt="Logo"
+       class="footer-logo"
+     />
+     <p>FITLIFE</p>
+     <small>© 2025 Todos los derechos reservados</small>
+   </div>
+ 
+   <!-- Enlaces legales -->
+   <div class="footer-links">
+     <h4>Legal</h4>
+     <a href="Documento/Política de Privacidad.pdf"
+       >Política de Privacidad</a
+     >
+     <!-- Dentro de href llama a un documento pdf con la poltica-->
+     <a href="Documento/Términos y Condiciones.pdf"
+       >Términos y Condiciones</a
+     >
+     <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+     <a href="Documento/LeyProteccionDatos.pdf">Protección de Datos</a>
+   </div>
+ 
+   <!-- Redes sociales con íconos personalizados -->
+   <div class="footer-social">
+     <h4>Síguenos</h4>
+     <a href="https://www.facebook.com/"
+       ><img
+         src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+         alt="Facebook"
+         class="social-icon"
+     /></a>
+     <a href="https://www.instagram.com/"
+       ><img
+         src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+         alt="Instagram"
+         class="social-icon"
+     /></a>
+     <a href="https://www.youtube.com/"
+       ><img
+         src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+         alt="Youtube"
+         class="social-icon"
+     /></a>
+     <a href="https://www.tiktok.com/"
+       ><img
+         src="https://cdn-icons-png.flaticon.com/512/3116/3116491.png"
+         alt="Tik tok"
+         class="social-icon"
+     /></a>
+   </div>
+ </div>
+ </footer>
+ <script src="menu_toggle.js"></script>
+  </body>
+</html>

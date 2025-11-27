@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proposito</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="proposito.css" />
+    <link rel="stylesheet" href="pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="top-header">
+      <a href="inicio.html" class="logo">
+        <img height="190" width="300" src="img/LOGO.png" alt="logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="menu-horizontal">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li>
+          <a>Conocenos <span class="flecha">&#9662;</span></a>
+          <ul class="menu-vertical">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="proposito.html">Proposito</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Guía Fitness<span class="flecha">&#9662;</span></a>
+          <ul class="menu-vertical">
+            <li><a href="rutinas.html">Rutinas</a></li>
+            <li><a href="nutricion.html">Nutrición</a></li>
+            <li><a href="suplementos.html">Suplmemnetos</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+          </ul>
+        </li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN PROPÓSITO -->
+    <section class="seccion-proposito">
+      <h1>Nuestro propósito</h1>
+      <p class="proposito-intro">
+        En FITLIFE queremos ser una guía sencilla para que cualquier persona
+        pueda entender mejor cómo entrenar, alimentarse y avanzar en el gimnasio
+        sin sentirse perdida.
+      </p>
+
+      <div class="proposito-bloque">
+        <div class="proposito-texto">
+          <h2>¿Qué buscamos?</h2>
+          <p>
+            Nuestro propósito es ayudarte a tomar mejores decisiones sobre tu
+            entrenamiento y tu salud, explicando los conceptos de forma clara,
+            sin tecnicismos innecesarios ni publicidad de productos.
+          </p>
+
+          <ul class="proposito-lista">
+            <li>Organizar la información por niveles y objetivos.</li>
+            <li>Brindar consejos básicos de técnica y seguridad.</li>
+            <li>Ofrecer una base sobre rutinas, nutrición y suplementos.</li>
+            <li>Motivar un estilo de vida más activo y saludable.</li>
+          </ul>
+        </div>
+
+        <div class="proposito-imagen">
+          <img
+            src="img/pres_banca.jpg"
+            alt="Persona enfocada entrenando en el gimnasio"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="img/LOGO_PEQUEÑO.png" alt="Logo" class="footer-logo" />
+            <p>FITLIFE</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="Documento/Política de Privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="Documento/Términos y Condiciones.pdf"
+              >Términos y Condiciones</a
+            >
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="Documento/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                alt="Youtube"
+                class="social-icon"
+            /></a>
+            <a href="https://www.tiktok.com/"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/3116/3116491.png"
+                alt="Tik tok"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>

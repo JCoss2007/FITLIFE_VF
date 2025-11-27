@@ -1,0 +1,134 @@
+/* ====== SECCIÓN FORMULARIO CONTACTO  ====== */
+.seccion-formulario {
+  background-color: #f5f5f5;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0 3rem;
+}
+
+.div-cont-formulario {
+  background-color: #ff7a1a;
+  padding: 1.875rem;
+  border: 0.125rem solid #d8620c;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.div-cont-formulario h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.div-cont-formulario p {
+  color: #ffffff;
+  margin-bottom: 0.938rem;
+}
+
+/* Contenedor de cada campo */
+.campo {
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+
+/* Etiquetas */
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Inputs y select */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+/* LISTAS CHECKBOX Y RADIO */
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.313rem;
+}
+
+.lista-checkbox li,
+.lista-radio li {
+  margin-bottom: 0.25rem;
+}
+
+/* Botón */
+.seccion-formulario button {
+  background-color: #ffffff;
+  color: #ff7a1a;
+  border: 0.063rem solid #ffffff;
+  padding: 0.625rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.seccion-formulario button:hover {
+  background-color: #222;
+  color: #ffffff;
+}
+
+/* ====== RESPONSIVE ====== */
+
+/* Tablets / pantallas medianas */
+@media (max-width: 900px) {
+  .seccion-formulario {
+    padding: 2rem 1.5rem;
+    margin: 2rem 0 2.5rem;
+  }
+
+  .div-cont-formulario {
+    padding: 1.5rem;
+    max-width: 32rem; /* un poco más angosto */
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .seccion-formulario {
+    padding: 1.5rem 1rem; /* menos espacio a los lados */
+    margin: 1.5rem 0 2rem;
+  }
+
+  .div-cont-formulario {
+    padding: 1.25rem;
+    max-width: 100%; /* ocupa casi todo el ancho */
+  }
+
+  .campo {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .div-cont-formulario h2 {
+    font-size: 1.3rem;
+  }
+
+  .div-cont-formulario p {
+    font-size: 0.9rem;
+  }
+
+  .seccion-formulario button {
+    width: 100%; /* botón a lo ancho en celu */
+    text-align: center;
+  }
+}

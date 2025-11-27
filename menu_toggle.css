@@ -1,0 +1,54 @@
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio al borde derecho */
+}
+
+/* Menú horizontal normal (desktop) */
+.menu-horizontal {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+/* RESPONSIVE: TABLET Y MÓVIL */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en tablet y cel */
+    color: black;
+  }
+
+  .menu-horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Se vuelve vertical cuando se active */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del header */
+    left: 0;
+    padding: 0.5rem 0;
+  }
+
+  .menu-horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase desde JS */
+  }
+
+  .menu-horizontal li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-horizontal li:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Opcional: ajustar un poquito más en celulares muy chicos */
+@media (max-width: 600px) {
+  .menu-horizontal {
+    top: 4.2rem;
+  }
+}
