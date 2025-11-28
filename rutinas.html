@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rutinas</title>
+
+    <!-- Tus mismos CSS globales -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="rutinas.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+    <link rel="stylesheet" href="pie.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="top-header">
+      <a href="inicio.html" class="logo">
+        <img height="190" width="300" src="img/LOGO.png" alt="logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="menu-horizontal">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li>
+          <a>Conocenos <span class="flecha">&#9662;</span></a>
+          <ul class="menu-vertical">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="proposito.html">Proposito</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Guía Fitness<span class="flecha">&#9662;</span></a>
+          <ul class="menu-vertical">
+            <li><a href="rutinas.html">Rutinas</a></li>
+            <li><a href="nutricion.html">Nutrición</a></li>
+            <li><a href="suplementos.html">Suplmemnetos</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+          </ul>
+        </li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <!-- CONTENIDO PRINCIPAL RUTINAS -->
+    <section class="seccion-rutinas">
+        <h1>Rutinas recomendadas</h1>
+        <p class="rutinas-intro">
+          Aquí encontrarás algunas rutinas básicas organizadas por nivel.  
+          Lee la descripción y revisa el video para entender mejor cómo realizar cada ejercicio.
+        </p>
+  
+<!-- RUTINA 1 -->
+<div class="rutina-bloque">
+    <div class="rutina-texto">
+      <h2>Rutina Full Body (Principiante)</h2>
+      <p>
+        Ideal si recién estás empezando. Trabaja todo el cuerpo en una sola sesión,
+        enfocándote en aprender la técnica y acostumbrarte al movimiento.
+      </p>
+      <ul>
+        <li>Sentadillas con peso corporal</li>
+        <li>Press de pecho con mancuernas ligeras</li>
+        <li>Remo con mancuernas</li>
+        <li>Plancha y abdominales básicos</li>
+      </ul>
+    </div>
+  
+    <div class="rutina-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7NbcQ7V_CEk?si=oFX56tAwXv-iCGLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <!-- RUTINA 2 -->
+  <div class="rutina-bloque">
+    <div class="rutina-texto">
+      <h2>Rutina Push Pull Legs (Intermedio)</h2>
+      <p>
+        Pensada para quienes ya entrenan hace un tiempo y quieren organizar sus días
+        por grupos musculares: empuje, tirón y piernas.
+      </p>
+      <ul>
+        <li>Día Push: pecho, hombro y tríceps</li>
+        <li>Día Pull: espalda y bíceps</li>
+        <li>Día Legs: glúteos, cuádriceps y femorales</li>
+      </ul>
+    </div>
+  
+    <div class="rutina-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iCFfBQNFyPE?si=VjPZsam3bb3i5HUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <!-- RUTINA 3 -->
+  <div class="rutina-bloque">
+    <div class="rutina-texto">
+      <h2>Rutina Piernas y Glúteos (Enfoque)</h2>
+      <p>
+        Si quieres priorizar tren inferior, esta rutina concentra el trabajo en piernas y glúteos,
+        combinando ejercicios básicos y complementarios.
+      </p>
+      <ul>
+        <li>Sentadilla libre o en multipower</li>
+        <li>Prensa inclinada</li>
+        <li>Elevación de cadera (hip thrust)</li>
+        <li>Ejercicios de gemelos</li>
+      </ul>
+    </div>
+  
+    <div class="rutina-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D2jaJpE5HHM?si=mfFF8yRxCQtV7VR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+        </div>
+      </section>
+  
+
+
+        <!-- PIE DE PAGINA -->
+        <section id="footer">
+          <footer class="footer">
+           <div class="footer-container">
+       <!-- Logo y nombre de sitio -->
+       <div class="footer-brand">
+         <img 
+           src="img/LOGO_PEQUEÑO.png"
+           alt="Logo"
+           class="footer-logo"
+         />
+         <p>FITLIFE</p>
+         <small>© 2025 Todos los derechos reservados</small>
+       </div>
+     
+       <!-- Enlaces legales -->
+       <div class="footer-links">
+         <h4>Legal</h4>
+         <a href="Documento/Política de Privacidad.pdf"
+           >Política de Privacidad</a
+         >
+         <!-- Dentro de href llama a un documento pdf con la poltica-->
+         <a href="Documento/Términos y Condiciones.pdf"
+           >Términos y Condiciones</a
+         >
+         <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+         <a href="Documento/LeyProteccionDatos.pdf">Protección de Datos</a>
+       </div>
+     
+       <!-- Redes sociales con íconos personalizados -->
+       <div class="footer-social">
+         <h4>Síguenos</h4>
+         <a href="https://www.facebook.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+             alt="Facebook"
+             class="social-icon"
+         /></a>
+         <a href="https://www.instagram.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+             alt="Instagram"
+             class="social-icon"
+         /></a>
+         <a href="https://www.youtube.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+             alt="Youtube"
+             class="social-icon"
+         /></a>
+         <a href="https://www.tiktok.com/"
+           ><img
+             src="https://cdn-icons-png.flaticon.com/512/4782/4782345.png"
+             alt="Tik tok"
+             class="social-icon"
+         /></a>
+       </div>
+     </div>
+     </footer>
+     <script src="menu_toggle.js"></script>
+  </body>
+</html>

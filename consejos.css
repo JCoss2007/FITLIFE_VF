@@ -1,0 +1,93 @@
+/* ====== SECCIÓN CONSEJOS ====== */
+
+.seccion-consejos {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 32px;
+}
+
+.seccion-consejos h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.consejos-intro {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Bloque de consejo: foto circular + texto */
+.consejo-bloque {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 26px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Foto circular */
+.consejo-foto {
+  flex: 0 0 90px; /* ancho fijo aproximado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consejo-foto img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; /* círculo */
+  object-fit: cover; /* recorta bien la cara */
+  border: 3px solid #ff7a1a; /* borde naranja sutil */
+}
+
+/* Texto del consejo */
+.consejo-texto {
+  flex: 1;
+}
+
+.consejo-texto h2 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.consejo-frase {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.consejo-detalle {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive: apilar en celular */
+@media (max-width: 768px) {
+  .seccion-consejos {
+    padding: 0 20px;
+  }
+
+  .consejo-bloque {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .consejo-bloque {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .consejo-foto {
+    margin-bottom: 8px;
+  }
+}
