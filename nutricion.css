@@ -1,0 +1,99 @@
+/* ====== SECCIÓN NUTRICIÓN / RECETAS ====== */
+
+.seccion-nutricion {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 32px;
+}
+
+.seccion-nutricion h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.nutricion-intro {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Bloque: imagen + texto */
+.receta-bloque {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.receta-imagen {
+  flex: 1;
+}
+
+.receta-imagen img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.receta-texto {
+  flex: 2;
+}
+
+.receta-texto h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.receta-descripcion {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.receta-texto h3 {
+  font-size: 0.98rem;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.receta-texto ul,
+.receta-texto ol {
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+  color: #444;
+}
+
+.receta-texto ul li,
+.receta-texto ol li {
+  margin-bottom: 3px;
+}
+
+/* Responsive: tablet y celu */
+@media (max-width: 768px) {
+  .seccion-nutricion {
+    padding: 0 20px;
+  }
+
+  .receta-bloque {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion-nutricion {
+    padding: 0 16px;
+  }
+
+  .receta-texto h2 {
+    font-size: 1.1rem;
+  }
+
+  .receta-descripcion {
+    font-size: 0.9rem;
+  }
+}

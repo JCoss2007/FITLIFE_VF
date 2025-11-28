@@ -1,0 +1,116 @@
+/*           SECCIÓN SUPLEMENTOS             */
+.seccion-suplementos {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 32px;
+}
+
+.seccion-suplementos h1 {
+  font-size: 2.1rem;
+  margin-bottom: 8px;
+}
+
+.sup-intro {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Bloques tipo tarjeta: texto izquierda, imagen derecha */
+
+.sup-bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 22px;
+}
+
+.sup-texto {
+  flex: 1.7;
+}
+
+.sup-imagen {
+  flex: 1.1;
+  display: flex;
+  justify-content: center;
+}
+
+.sup-imagen img {
+  width: 100%;
+  max-width: 320px; /* achica un poco la imagen */
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Textos internos */
+
+.sup-texto h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.sup-texto h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.sup-texto p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.sup-texto ul {
+  font-size: 0.9rem;
+  color: #555;
+  padding-left: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.sup-texto li {
+  margin-bottom: 3px;
+}
+
+/*   RESPONSIVE: TABLET/MÓVIL */
+
+@media (max-width: 768px) {
+  .seccion-suplementos {
+    padding: 0 20px;
+  }
+
+  .sup-bloque {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sup-imagen {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sup-imagen img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion-suplementos {
+    padding: 0 16px;
+  }
+
+  .sup-texto h2 {
+    font-size: 1.1rem;
+  }
+
+  .sup-texto p,
+  .sup-texto ul {
+    font-size: 0.88rem;
+  }
+}
