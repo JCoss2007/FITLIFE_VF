@@ -1,0 +1,86 @@
+/* ====== SECCIÓN RUTINAS ====== */
+
+.seccion-rutinas {
+  max-width: 1200px;
+  margin: 40px auto 60px auto;
+  padding: 0 32px;
+}
+
+.seccion-rutinas h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.rutinas-intro {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+/* Bloques texto + video */
+.rutina-bloque {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.rutina-texto {
+  flex: 1;
+}
+
+.rutina-texto h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.rutina-texto p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.rutina-texto ul {
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.rutina-texto ul li {
+  margin-bottom: 4px;
+}
+
+.rutina-video {
+  flex: 1;
+}
+
+/* Video ocupando el ancho de su columna */
+.rutina-video video,
+.rutina-video iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 14px;
+  border: none;
+  display: block;
+}
+
+/* Responsive: tablet y celu, se apilan igual que historia/proposito */
+@media (max-width: 768px) {
+  .seccion-rutinas {
+    padding: 0 20px;
+  }
+
+  .rutina-bloque {
+    flex-direction: column;
+  }
+}
+.rutina-video video,
+.rutina-video iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 14px;
+  border: none;
+  display: block;
+}
